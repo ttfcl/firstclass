@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "gFont";
+    src: url("../폰트/Pretendard-Light.ttf") format('truetype');
+    font-display: swap;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: "gFont";    
+    word-break: keep-all;
+    background-color: #e9eaed;
+}
+.col-12 {
+    padding: 0px;
+}
+.logo {
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+/*-----nav------*/
+nav {
+    width: 100%;
+    border-bottom: 2px solid gray;
+    background-color: white;
+}
+.nav1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav1Title {
+    font-size: 48px;
+    color: red;
+}
+.nav1Call {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 18px;
+}
+.nav1Call > a { 
+    color: black;
+}
+.nav1Call > a:hover { 
+    color: red;
+}
+.nav2 {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+.nav2 > a {
+    margin-right: 20px;
+    color: black;
+}
+@media (max-width: 1200px) {
+    .nav1 {
+        width: 90%;
+    }
+    .nav1Title  {
+        font-size: 32px;
+    }
+    .nav2 {
+        justify-content: space-evenly;
+    }
+    .nav2 > a {
+        margin-right: 0px;
+    }
+}
+#away {
+    position: relative;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.test {
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 500px) {
+    .test {
+        top: 25px;
+    }
+}
+.test > a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+.test > a:hover {
+    color: #fbaf3f;
+    transition: 0.5s;
+    background-color: gray;
+}
+.hide {
+    display: none;
+}
+
+
+.section1 {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 50px;
+}
+.imgbox {
+    display: flex;
+    flex-direction: column;
+}
+.imgbox > img {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call {
+    display: flex;
+    flex-wrap: wrap;
+}
+.call > a {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
