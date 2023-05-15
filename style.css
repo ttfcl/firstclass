@@ -178,6 +178,10 @@ nav {
     max-width: 300px;
     margin-top: 20px;
 }
+.section2Img:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
+}
 footer {
     text-align: center;
     background-color: black;
