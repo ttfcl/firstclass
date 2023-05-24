@@ -29,7 +29,11 @@ body {
 a {
     text-decoration: none;
 }
-
+.backlink > a {
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+}
 /*-----nav------*/
 nav {
     width: 100%;
