@@ -85,6 +85,7 @@ nav {
         font-size: 32px;
     }
     .nav2 {
+        width:100%;
         justify-content: space-evenly;
     }
     .nav2 > a {
