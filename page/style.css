@@ -147,6 +147,7 @@ nav {
 .call {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .call > a {
     width: 100%;
@@ -156,6 +157,117 @@ nav {
     color: black;
     padding: 10px;
 }
+
+
+
+/*bodySection*/
+.bodySection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    font-family: 'gfont';
+}
+.bodySection2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/madoyo-78d70.appspot.com/o/sky%2Fbg2.jpg?alt=media&token=16214971-ee0b-426a-8f18-b6ce8ef8ff99);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: 'gfont';
+}
+.textBig {
+    font-size: 44px;
+    color: white;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+.textMid {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+.text {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(17, 17, 17, 0.8);
+    margin-top: 5px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.img1 {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contactBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.contactBoxContent {
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    display: block;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 2rem;
+}
+@media (max-width: 1200px) {
+    .contactBoxContent {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.imgbox {
+    display: flex;
+    flex-direction: column;
+}
+.imgbox > img {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 footer {
     text-align: center;
