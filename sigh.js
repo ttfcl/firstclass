@@ -56,7 +56,7 @@ let loginF = () => {
                         test3()  
                         setTimeout(function() {
                           alert('가입이 성공적으로 완료되었습니다.') 
-                          location.href = "index.html";
+                          location.href = "login.html";
                         }, 3000);            
                       }).catch((result) => {
                         if(masterkey === 0) {
