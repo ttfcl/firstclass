@@ -53,7 +53,7 @@ let loginF = () => {
                         result.user.updateProfile({displayName : name.value})
                         masterkey = 1;
                         controll = 1;
-                        test2()  
+                        test3()  
                         setTimeout(function() {
                           alert('가입이 성공적으로 완료되었습니다.') 
                           location.href = "index.html";
@@ -87,7 +87,7 @@ $(document).ready(function(){
   });
 });
 
-let test2 = () => {
+let test3 = () => {
   let directer = email.value
   let name2 = name.value
   let email2 = email.value
