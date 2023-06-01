@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퍼스트클래스 트렌스젠더 출장마사지</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sigh.css">
+  <meta name="description" property="og:description" content="최고의 트젠 쉬멜 시디 관리사 대기 중 퍼스트클래스를 이용해보세요.">
+  <meta property="og:image" content="mast.png">
+  <meta property="og:title" content="트젠 쉬멜 시디 퍼스트클래스 출장마사지"> 
+  <meta property="og:url" content="https://firstclass12.com/">
+  <link rel="shortcut icon" href="image/favicon.png">
+  <meta name="keywords" content="트젠, 쉬멜, 시디, 마사지, 출장마사지, 오일마사지, 아로마마사지, 시흥출장마사지, 서울출장마사지, 인천출장마사지, 안산출장마사지, 섹시출장마사지, 스웨디시, 건식마사지, 스포츠마사지">
+  <meta name="google-site-verification" content="U4VnIAiWQSPJBXML6IWOLr_HnaJr05VrHw5bgg_4NaU" />
+  <meta name="naver-site-verification" content="cef63c552014f1212f5708f7a67707fd48a7d9b6" />
+</head>
+<body>
+  <nav>
+      <div class="nav3">
+        <div class=" hide display1">
+          <a><span id="displayName">dasds</span>님 환영합니다.</a>  
+          <a class="">
+          <button class="nav_top_bar_button nav_top_button logout">
+            로그아웃 
+          </button>
+          <button class="nav_top_bar_button" href="#" id="away2" style="display: inline; font-size: 14px; padding-top: 1px;">
+            <div class="away2">포인트 충전</div>
+            <div class="test2 hide">
+              <div class=""><span id="bank"></span></br><span id="account"></span></div>
+            </div>
+          </button>
+          </a>
+        </div>
+        <div class="display2">    
+          <a href="login.html" class="nav_top_button">
+            <button class="nav_top_bar_button">
+              로그인 
+            </button>
+          </a>  
+          <a href="sigh.html" class="nav_top_button">
+            <button class="nav_top_bar_button">
+              회원가입
+            </button>
+          </a>
+        </div> 
+      </div>
+      <div class="nav1">
+        <div class="nav1Title">Firstclass12</div>
+        <div class="nav1Call">
+          <a href="" class="katalkLink">카톡문의</a>
+          <a href="" class="teleLink">텔레그램</a>
+        </div>
+      </div>
+      <div class="nav2">
+        <a href="index.html">Main</a>
+        <a href="page/nomal.html">일반코스</a>
+        <a href="page/sm.html">sm코스</a>
+        <div href="#" id="away">
+          <div class="away">다른지역보기</div>
+          <div class="test hide">
+            <a href="page/local.html?id=서울">서울</a>
+            <a href="page/local.html?id=부산">부산</a>
+            <a href="page/local.html?id=대구">대구</a>
+            <a href="page/local.html?id=인천">인천</a>
+            <a href="page/local.html?id=광주">광주</a>
+            <a href="page/local.html?id=대전">대전</a>
+            <a href="page/local.html?id=울산">울산</a>
+            <a href="page/local.html?id=경기">경기</a>
+            <a href="page/local.html?id=강원">강원</a>
+            <a href="page/local.html?id=충북">충북</a>
+            <a href="page/local.html?id=충남">충남</a>
+            <a href="page/local.html?id=전북">전북</a>
+            <a href="page/local.html?id=전남">전남</a>
+            <a href="page/local.html?id=경북">경북</a>
+            <a href="page/local.html?id=경남">경남</a>
+            <a href="page/local.html?id=세종">세종</a>
+            <a href="page/local.html?id=제주">제주</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+	<section class="sigh_box">
+    <div class="box">
+      <p>이메일을 입력해주세요</p>
+      <input type="email" placeholder="E-Mail" id="email">
+      <p>비밀번호를 입력해주세요</p>
+      <input type="password" placeholder="비밀번호" id="password">
+      <button id="register" style="width: 100%; height: 50px;">로그인</button>
+    </div>
+  </section>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+	<script src="nav.js"></script>
+  <script src="login.js"></script>
+  <script src="login2.js"></script>
+</body>
+<script type="text/javascript">
+	// F12키 금지
+	$(document).ready(function(){
+		$(document).on('keydown',function(e){
+			if ( e.keyCode == 123 || e.keyCode == 93) {  /* F12키 */
+        e.preventDefault();
+				e.returnValue = false;
+			}
+		});
+	});
+  $(document).ready(function(){
+		$(document).on('keydown',function(e){
+			if (e.keyCode == 93) {  /* F12키 */
+        alert("보안을 위해 개발자 모드를 금지시켰습니다.\n자세한 내용은 제작자에게 문의주세요.")
+        e.preventDefault();
+				e.returnValue = false;
+			}
+		});
+	});
+	// 마우스오른쪽 클릭방지
+	document.onmousedown=disableclick;
+	status="보안을 위해 개발자 모드를 금지시켰습니다.\n자세한 내용은 제작자에게 문의주세요.";
+	function disableclick(event){
+		if (event.button==2) {
+			alert(status);
+			return false;
+		}
+	}	
+</script>
+</html>

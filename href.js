@@ -1,4 +1,23 @@
-let abc, defg
+let abc, defg, hijk, lmop
+
+master = () => { 
+    const bank = document.querySelector("#bank")
+    bank.textContent = hijk
+    const gesipanR = document.querySelectorAll('.katalkLink')
+    console.log(abc)
+    for(let a of gesipanR) {
+        a.href = abc
+    }
+    const gesipanD = document.querySelectorAll('.teleLink')
+    console.log(defg)
+    for(let a of gesipanD) {
+        a.href = defg
+    }
+    const account = document.querySelector("#account")
+    account.textContent = lmop
+
+}
+
 
 var firebaseConfig = {
     apiKey: "AIzaSyArYfc5A61zRTmKHurBuQ50YccyQjpSFbI",
@@ -11,6 +30,10 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
   
   const db = firebase.firestore();
+  db.collection('product').doc('firstclassbank').get().then((결과)=>{
+    hijk = 결과.data().bank
+    lmop = 결과.data().account
+  })  
   db.collection('product').doc('firstclass').get().then((결과)=>{
     abc = 결과.data().kt
       console.log(abc)
@@ -19,14 +42,7 @@ var firebaseConfig = {
     defg = 결과.data().te
       console.log(defg)
   }).then(() => {
-    const gesipanR = document.querySelectorAll('.katalkLink')
-    console.log(abc)
-    for(let a of gesipanR) {
-        a.href = abc
-    }
-    const gesipanD = document.querySelectorAll('.teleLink')
-    console.log(defg)
-    for(let a of gesipanD) {
-        a.href = defg
-    }
+    master()
   })
+  
+
