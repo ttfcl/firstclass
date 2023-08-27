@@ -8,11 +8,11 @@ master = () => {
     for(let a of gesipanR) {
         a.href = abc
     }
-    const gesipanD = document.querySelectorAll('.teleLink')
-    console.log(defg)
-    for(let a of gesipanD) {
-        a.href = defg
-    }
+    // const gesipanD = document.querySelectorAll('.teleLink')
+    // console.log(defg)
+    // for(let a of gesipanD) {
+    //     a.href = defg
+    // }
     const account = document.querySelector("#account")
     account.textContent = lmop
 
@@ -37,11 +37,11 @@ var firebaseConfig = {
   db.collection('product').doc('firstclass').get().then((결과)=>{
     abc = 결과.data().kt
       console.log(abc)
-  })
-  db.collection('product').doc('firstclass').get().then((결과)=>{
-    defg = 결과.data().te
-      console.log(defg)
   }).then(() => {
     master()
   })
+  // db.collection('product').doc('firstclass').get().then((결과)=>{
+  //   defg = 결과.data().te
+  //     console.log(defg)
+  // })
   
