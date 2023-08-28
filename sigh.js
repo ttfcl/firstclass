@@ -29,48 +29,67 @@ let loginF = () => {
       if(email.value === '') {
         alert('이메일 칸이 비어 있습니다.')
       }else {
-        if(email.value.search('@') === -1) {
-          alert('올바른 형식의 이메일이 아닙니다.')
-        }else {
-          if(email.value.search('@') + 1 >= email.value.length){
-            alert('올바른 형식의 이메일이 아닙니다.')
-          }else {
-            if(password.value === '') {
-              alert('비밀번호가 입력되지 않았습니다.')
-            }else {
-              if(password.value.length < 6) {
-                alert('비밀번호가 6자리 미만입니다.')
-              }else {
-                if(rePassword.value === '') {
-                  alert('비밀번호 재입력칸이 비었습니다.')
-                }else {
-                  if(password.value !== rePassword.value) {
-                    alert('비밀번호와 비밀번호 재입력이 다릅니다.')
-                  }else {
-                    document.querySelector("#sighUp").classList.add("hide")
-                      document.querySelector("#sighUp2").classList.remove("hide")
-                      firebase.auth().createUserWithEmailAndPassword(email.value, password.value).then((result) => {                     
-                        result.user.updateProfile({displayName : name.value})
-                        masterkey = 1;
-                        controll = 1;
-                        test3()  
-                        setTimeout(function() {
-                          alert('가입이 성공적으로 완료되었습니다.') 
-                          location.href = "login.html";
-                        }, 3000);            
-                      }).catch((result) => {
-                        if(masterkey === 0) {
-                        alert('이미 가입 된 이메일입니다.')
-                        location.href = "sigh.html"
-                        }}
-                      )
-                  }
-                }
-              }
-            }
-          }
-        }
+        document.querySelector("#sighUp").classList.add("hide")
+          document.querySelector("#sighUp2").classList.remove("hide")
+          firebase.auth().createUserWithEmailAndPassword(email.value, password.value).then((result) => {                     
+            result.user.updateProfile({displayName : name.value})
+            masterkey = 1;
+            controll = 1;
+            test3()  
+            setTimeout(function() {
+              alert('가입이 성공적으로 완료되었습니다.') 
+              location.href = "login.html";
+            }, 3000);            
+          }).catch((result) => {
+            if(masterkey === 0) {
+            alert('이미 가입 된 이메일입니다.')
+            location.href = "sigh.html"
+            }}
+          )
       }
+      // {
+      //   if(email.value.search('@') === -1) {
+      //     alert('올바른 형식의 이메일이 아닙니다.')
+      //   }else {
+      //     if(email.value.search('@') + 1 >= email.value.length){
+      //       alert('올바른 형식의 이메일이 아닙니다.')
+      //     }else {
+      //       if(password.value === '') {
+      //         alert('비밀번호가 입력되지 않았습니다.')
+      //       }else {
+      //         if(password.value.length < 6) {
+      //           alert('비밀번호가 6자리 미만입니다.')
+      //         }else {
+      //           if(rePassword.value === '') {
+      //             alert('비밀번호 재입력칸이 비었습니다.')
+      //           }else {
+      //             if(password.value !== rePassword.value) {
+      //               alert('비밀번호와 비밀번호 재입력이 다릅니다.')
+      //             }else {
+      //               document.querySelector("#sighUp").classList.add("hide")
+      //                 document.querySelector("#sighUp2").classList.remove("hide")
+      //                 firebase.auth().createUserWithEmailAndPassword(email.value, password.value).then((result) => {                     
+      //                   result.user.updateProfile({displayName : name.value})
+      //                   masterkey = 1;
+      //                   controll = 1;
+      //                   test3()  
+      //                   setTimeout(function() {
+      //                     alert('가입이 성공적으로 완료되었습니다.') 
+      //                     location.href = "login.html";
+      //                   }, 3000);            
+      //                 }).catch((result) => {
+      //                   if(masterkey === 0) {
+      //                   alert('이미 가입 된 이메일입니다.')
+      //                   location.href = "sigh.html"
+      //                   }}
+      //                 )
+      //             }
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // // }
     }
   }else{
     return 0;
