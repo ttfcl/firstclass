@@ -1,8 +1,4 @@
-if(localStorage.getItem("userEmail")) {
-  location.href = 'index.html'
-}
-
-
+localStorage.clear()
 
 var firebaseConfig = {
   apiKey: "AIzaSyCZRKoGQlxJCDO89l-p7u1YEd3GmY3pw_w",
