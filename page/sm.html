@@ -86,6 +86,17 @@
     </div>
   </div>
   <footer> 
+    <div id="reset" style="color: black;">
+      초기화
+    </div>
+    <script>
+      let reset = document.querySelector("#reset")
+      reset.onclick = () => {
+        localStorage.clear()
+        alert("초기화완료")
+        location.href="../index.html"
+      }
+    </script>
     All copyright has been @firstclass12.com
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
