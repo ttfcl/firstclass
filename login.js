@@ -1,12 +1,12 @@
 localStorage.clear()
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCZRKoGQlxJCDO89l-p7u1YEd3GmY3pw_w",
-  authDomain: "youn-ec1d7.firebaseapp.com",
-  projectId: "youn-ec1d7",
-  storageBucket: "youn-ec1d7.appspot.com",
-  messagingSenderId: "441467770567",
-  appId: "1:441467770567:web:a28faf2a6f4abbf15010e2"
+  apiKey: "AIzaSyCb44FGoUhJ2swDDTkG8uhFsn3V72oc4Hk",
+  authDomain: "login-7ab5b.firebaseapp.com",
+  projectId: "login-7ab5b",
+  storageBucket: "login-7ab5b.appspot.com",
+  messagingSenderId: "758773760067",
+  appId: "1:758773760067:web:376883ad21ee41080754f6"
 };
 firebase.initializeApp(firebaseConfig);
 
