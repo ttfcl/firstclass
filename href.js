@@ -1,8 +1,8 @@
 let abc, defg, hijk, lmop
 
 master = () => { 
-    const bank = document.querySelector("#bank")
-    bank.textContent = hijk
+    // const bank = document.querySelector("#bank")
+    // bank.textContent = hijk
     const gesipanR = document.querySelectorAll('.katalkLink')
     console.log(abc)
     for(let a of gesipanR) {
